@@ -16,8 +16,6 @@ services:
     ports:
       - "3306:3306"
 
-  # Normalmente a porta padrão do phpmyadmin e a 3306 (a mesma do mysql), mas
-  # resulvi mudar para 3307, para ter certeza que o phpmyadmin vai funcionar.
   phpmyadmin:
     depends_on:
       - db
@@ -27,7 +25,7 @@ services:
       MYSQL_ROOT_PASSWORD: wordpress
     restart: always
     ports:
-      - "3307:3307"
+      - "8080:80"
 
   wordpress:
     depends_on:
