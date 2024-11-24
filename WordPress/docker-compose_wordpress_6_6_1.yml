@@ -1,3 +1,5 @@
+# Instalação completa do WordPress e suas dependências
+# WordPress, com PHP, MySQL e Apache
 services:
   db:
     image: mysql:9.0.1
