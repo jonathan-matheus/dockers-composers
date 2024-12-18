@@ -1,5 +1,5 @@
-version: "3.8"
-
+# A Aplicação ira rodar em http://localhost:8080/
+# E todos os arquivos da aplicação devem ser postos na pasta app
 services:
   web:
     image: php:8.1-apache
